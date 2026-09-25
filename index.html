@@ -970,10 +970,10 @@
         transform: scale(1.05);
       }
     }
-    .flick-blind  .card-flick_image-bg { background: url("categories/Blind%20Boxes.jpg") center/cover no-repeat; }
-    .flick-plush  .card-flick_image-bg { background: url("categories/Plush%20Toys.jpg") center/cover no-repeat; }
-    .flick-mega   .card-flick_image-bg { background: url("categories/MEGA.jpg") center/cover no-repeat; }
-    .flick-collab .card-flick_image-bg { background: url("categories/Accessories.jpg") center/cover no-repeat; }
+    .flick-blind  .card-flick_image-bg { background: url("IP/SKULLPANDA.png") center/cover no-repeat; }
+    .flick-plush  .card-flick_image-bg { background: url("IP/THE%20MONSTERS.png") center/cover no-repeat; }
+    .flick-mega   .card-flick_image-bg { background: url("IP/MOLLY.png") center/cover no-repeat; }
+    .flick-collab .card-flick_image-bg { background: url("IP/HIRONO.png") center/cover no-repeat; }
 
     .card-flick_overlay {
       position: absolute;
@@ -1521,7 +1521,9 @@
 
   <main>
     <section class="page-section hero" id="hero">
-      <video class="hero-video" autoplay muted loop playsinline poster="" aria-hidden="true"></video>
+      <video class="hero-video" autoplay muted loop playsinline poster="" aria-hidden="true">
+        <source src="SKULLPANDA%20WHERE%20TIME%20DWELLS%20Series%20Figures_Warm-up_Video_Clean.mp4" type="video/mp4">
+      </video>
       <canvas class="hero-ripple" aria-hidden="true"></canvas>
       <div class="hero-mist" aria-hidden="true">
         <span class="hero-mist-line"></span>
@@ -1727,7 +1729,9 @@
     <!-- Reel: 全屏视频过渡屏，"继续下滑" 文字随滚动在视频上滑过 -->
     <section class="route-reel" id="reel" aria-label="App 路由视频过渡">
       <div class="route-reel-stage">
-        <video class="route-reel-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+        <video class="route-reel-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="%E7%AC%AC%E5%9B%9B%E5%B1%8F%E8%A7%86%E9%A2%91.mp4" type="video/mp4">
+        </video>
         <div class="route-reel-overlay" aria-hidden="true"></div>
         <div class="route-reel-caption" aria-hidden="true">
           <span class="route-reel-eyebrow">Chapter 04 · App Route</span>
@@ -1860,8 +1864,8 @@
   const heroVideoSource = heroVideo?.querySelector('source');
   const heroTitle = document.querySelector('.hero-title');
   const heroViewMore = document.querySelector('.hero-view-more');
-  const skullpandaVideo = '';
-  const hironoVideo = '';
+  const skullpandaVideo = 'SKULLPANDA%20WHERE%20TIME%20DWELLS%20Series%20Figures_Warm-up_Video_Clean.mp4';
+  const hironoVideo = 'Hirono%20After%20Dark%20Seriess_Full_Video_Clean_EN_Horizontal_1K.mp4';
   const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
   const rootStyle = document.documentElement.style;
